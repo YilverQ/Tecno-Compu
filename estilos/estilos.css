@@ -1,0 +1,374 @@
+/*Para Todo*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: JosefinSans-Bold;
+	font-size:16px;
+	background: #e9e9e9;
+}
+
+a{
+	text-decoration: none;
+}
+
+@font-face{
+	font-family: Satisfy-Regular;
+	src:url(../fuentes/Satisfy-Regular.ttf);
+}
+
+@font-face{
+	font-family: JosefinSans-Bold;
+	src:url(../fuentes/JosefinSans-Bold.ttf);
+}
+/*Fin Para Todo*/
+
+/*Header*/
+/*Header Nav*/
+		/*Titulo*/
+header h2{
+	position: absolute;
+	margin: 0px 0px 0px 40px;
+	font-size: 38px;
+	font-family: Satisfy-Regular;
+	display: block;
+	cursor: default;
+	color:  rgba(46, 134, 222,1.0);
+	text-shadow: 1px 1px 1px rgba(10,10,10,10);
+	padding: 5px;
+	transition: 1s all;
+}
+
+header h2:hover{
+	color: #a55eea;
+	transition: 1s all;
+}
+
+header h2 span{
+	text-shadow: 1px 1px 1px rgba(10,10,10,10);
+	color: white;
+}
+		/*Menu de Navegacion*/
+nav.navegacion{
+	width: 100%;
+	margin:0px auto;
+	position: absolute;
+	z-index: 2;
+}
+
+header ul{
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+	border-radius: 0px 0px 10px 10px;
+	float: right;
+	list-style: none;
+	margin: 0px 60px 0px 0px;
+	background: rgba(56, 103, 214,.5);
+}
+
+header li{
+	display: inline-block;
+	padding: 15px 20px;
+	font-family: JosefinSans-Bold;
+	transition: all .5s;
+	color: white;
+	cursor: pointer;
+}
+
+header a{
+	color: white;
+}
+
+header a li {
+	padding: 15px 20px;
+	color: white;
+	font-family: JosefinSans-Bold;
+	text-decoration: none;
+}
+
+header li:hover{
+	background: #a55eea;
+	transition: all .5s;
+}		
+		/*Fin del SubMenu*/
+		/*Sub Menu*/
+ul.submenu{
+	position: absolute;
+	top: 46px;
+	background: rgba(30,30,30,0.8);
+	width:auto;
+	visibility: hidden;
+	opacity: 0;
+	text-align: center;
+	border-radius: 0px 0px 10px 10px;
+}
+
+ul.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	text-decoration: none;
+}
+
+ul.submenu li{
+	display: block;
+}
+
+ul.menu li:hover ul.submenu{
+	visibility: visible;
+	opacity: 1;
+	transition: all .5s;
+}
+	/*Fin del Sub Menu*/
+/*Fin del Header Nav*/
+/*Header*/
+h1{
+	font-family: Satisfy-Regular;
+	font-size: 100px;
+}
+
+div.header h3{
+	font-family: Satisfy-Regular;
+}
+
+div.header span{
+	color: #fff;
+}
+
+div.header{
+	width: 100%;
+	color: rgba(46, 134, 222,1.0);
+	height: 650px;
+	background-image: url(../imagenes/header.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	background-attachment: fixed;
+	overflow: hidden;
+	text-shadow: 1px 1px 1px rgba(10,10,10,10);
+	text-align: center;
+}
+
+div.header div.textos{
+	margin-top: 152px;
+}
+
+div.header div.titulo{
+	font-size: 85px;
+}
+
+div.header .subtitulo{
+	font-size: 42px;
+	font-weight: 300;
+	margin-bottom: 32px;
+}
+
+div.sesgoabajo{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	border-width: 0 0 100vh 500vh;
+	border-style: solid;
+	border-color: transparent transparent #e9e9e9 transparent;
+}
+
+div.sabana{
+	background: rgba(20,20,20,.5);
+	width: 100%;
+	height: 100%;
+}
+/*Fin Del Header*/
+
+/*Sobre Nosotros*/
+a.boton{
+	display: block;
+	padding: 6px;
+	width: 128px;
+	margin: auto;
+	margin-top: 34px;
+	border-radius: 2px;
+	border: 1px solid #000;
+	font-size: 19px;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+a.boton:hover{
+	transition: all .5s;
+	color: white;
+	border:1px solid #000;
+	background: #a55eea;
+	box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+}
+
+div.contenedor{
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+	padding: 52px 0px;
+}
+
+div.contenedor span{
+	background: #3867d6;
+	padding: 4px;
+	color: white;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+h2.sobre-nosotros{
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 10px;
+	font-weight: 600;
+	font-family: Satisfy-Regular;
+}
+
+h3.slogan{
+	font-size: 24px;
+	font-weight: 300px;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+p.parrafo{
+	margin-bottom: 13px;
+	font-weight: 300;
+	text-align: justify;
+	line-height: 24px;
+	color: rgb(24,16,16);
+}
+/*Fin del Sobre Nosotros*/
+/*Cartas*/
+a.bajar{
+	color: black;
+	cursor: default;
+}
+
+div.cartas{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+	background: #e9e9e9;
+}
+
+div.card{
+	width: 330px;
+	height: 430px;
+	border-radius: 8px;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.2s;
+	background: rgba(223, 228, 234,1.0);
+	border: 3px solid rgba(0,0,0,0.3);
+}
+
+div.card:hover{
+	transform: translateY(-15px);
+	box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+div.card img{
+	width: 330px;
+	height: 220px;
+}
+
+div.card h4{
+	font-weight: 600;
+	font-family: Satisfy-Regular;
+	font-size: 24px;
+	margin-top: 20px;
+}
+
+div.card p{
+	padding: 0 1em;
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+div.card a{
+	font-weight: 500;
+	text-decoration: none;
+	text-shadow: .3px .3px .3px rgba(10,10,10,.2);
+	margin-top: 20px;
+	font-size: 20px;
+	font-family: JosefinSans-Bold;
+	color: #000;
+}
+
+div.card a.inside{
+	color: rgba(46, 134, 222,1.0);
+}
+/*Fin de las cartas*/
+/*Boton de Subir*/
+a.sube{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background: linear-gradient(#a55eea,#3867d6);
+	bottom: 40px;
+	right: 50px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+	border-radius: 2px;
+	box-shadow: 2 2px 2px rgba(0,0,0,0.6);
+	transition: .5s all;
+}
+a.sube:hover{
+
+	transition: .5s all;
+	border-radius: 5px;
+}
+/*Fin Del Boton de Subir*/
+/*Pie de Pagina*/
+footer{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+footer div{
+	display: block;
+	margin: auto;
+}
+
+footer div p{
+	font-size: 18px;
+}
+footer p span{
+	padding: 5px;
+}
+footer p:hover span{
+	color:#a55eea;
+	transition: 1s all;
+}
+/*FIn del Pie de Pagina*/
+/*Media Queries*/
+
+@media screen and (max-width: 900px){
+	nav ul{
+		margin: 0px 20px 0px 0px;
+	}
+}
+@media screen and (max-width: 800px){
+	nav ul{
+		margin: 0px 0px 0px 0px;
+	}
+}
+/*Fin Del Header*/
